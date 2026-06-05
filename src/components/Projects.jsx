@@ -16,19 +16,19 @@ const Projects = () => {
             title: "Interactive Memory Game",
             image: memoryGame,
             description: "A dynamic, state-driven browser game utilizing clean visual feedback, responsive layouts, and engaging user interactions.",
-            link: "/coming-soon"
+            link: ""
         },
         {
             title: "Modern E-commerce Interface",
             image: ecommerce,
             description: "A comprehensive digital storefront experience designed with a seamless checkout pipeline, clear product filtering, and conversion-optimized hierarchy.",
-            link: "/coming-soon"
+            link: ""
         },
         {
             title: "Data Visualization Dashboard",
             image: analyticsDashboard,
             description: "A high-performance analytics interface tracking metrics (like sports simulation data or BI insights) using clear chart layouts and scannable visual indicators.",
-            link: "/coming-soon"
+            link: ""
         }
     ]
 
