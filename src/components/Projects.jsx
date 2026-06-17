@@ -16,7 +16,7 @@ const Projects = () => {
             title: "Interactive Memory Game",
             image: memoryGame,
             description: "A dynamic, state-driven browser game utilizing clean visual feedback, responsive layouts, and engaging user interactions.",
-            link: ""
+            link: "https://seg3125-assignment3.vercel.app/"
         },
         {
             title: "Modern E-commerce Interface",
