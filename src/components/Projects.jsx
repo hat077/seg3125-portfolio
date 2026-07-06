@@ -22,7 +22,7 @@ const Projects = () => {
             title: "Modern E-commerce Interface",
             image: ecommerce,
             description: "A comprehensive digital storefront experience designed with a seamless checkout pipeline, clear product filtering, and conversion-optimized hierarchy.",
-            link: ""
+            link: "https://seg3125-assignment4.vercel.app/"
         },
         {
             title: "Data Visualization Dashboard",
