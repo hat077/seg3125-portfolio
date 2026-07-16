@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const ProjectCard = ({ title, image, description, link }) => {
+const ProjectCard = ({ title, image, description, link, modules }) => {
     const isLinkAvailable = link && link.trim() !== "";
 
     return (
@@ -15,8 +15,21 @@ const ProjectCard = ({ title, image, description, link }) => {
                 </Link>
             )}
             <div className="card-body d-flex flex-column justify-content-between flex-grow-1">
-                <h5 className="card-title fw-bold fs-5">{title}</h5>
-                <p className="card-text text-secondary">{description}</p>
+                <div>
+                    <h5 className="card-title fw-bold fs-5 mb-2">{title}</h5>
+                    
+                    {/* Render Module Pill Tags */}
+                    <div className="d-flex flex-wrap gap-1 mb-3">
+                        {modules && modules.map((mod, i) => (
+                            <span key={i} className="badge bg-secondary text-light fw-normal" style={{ fontSize: '0.7rem' }}>
+                                {mod}
+                            </span>
+                        ))}
+                    </div>
+
+                    <p className="card-text text-secondary small">{description}</p>
+                </div>
+                
                 {isLinkAvailable ? (
                     <a 
                         href={link} 

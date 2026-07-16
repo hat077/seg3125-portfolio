@@ -149,3 +149,27 @@ html, body {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 242, 254, 0.5);
 }
+
+/* 1. Ensure absolute fluid scale with consistent padding rules across components */
+.container-fluid {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 2rem) !important;
+    padding-left: var(--bs-gutter-x, 2rem) !important;
+}
+
+/* 2. Add structural margin offsets to fixed navigation elements to prevent overlap */
+body {
+    padding-top: 76px; /* Offsets content down from your fixed-top Navbar */
+}
+
+/* 3. Enhance tag badge visual contrast */
+#projects .badge {
+    background-color: rgba(0, 242, 254, 0.1) !important;
+    color: var(--accent-glowing) !important;
+    border: 1px solid rgba(0, 242, 254, 0.3);
+}
+
+/* 4. Smooth scroll behavior for anchoring links */
+html {
+    scroll-behavior: smooth;
+}
